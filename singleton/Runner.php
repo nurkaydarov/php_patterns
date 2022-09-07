@@ -9,11 +9,11 @@ class Runner
     {
         $instance = Singleton::getInstance();
         $instance->setAge(97);
-        echo $instance->getAge();
+        echo $instance->getAge() . " <br>";
         unset($instance);
         echo '<br>';
         $instance2 = Singleton::getInstance();
-        echo "Instance2 " .  $instance2->getAge();
+        echo "Instance2 " .  $instance2->getAge() . " <br>";
 
     }
 

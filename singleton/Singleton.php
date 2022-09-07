@@ -4,13 +4,13 @@ namespace app\singleton;
 
 class Singleton
 {
-    private static $instance;
+    private static Singleton $instance;
     public int $age;
     public static function getInstance()
     {
         if(empty(self::$instance))
         {
-            self::$instance = new self();
+            self::$instance = new Singleton();
         }
         return self::$instance;
     }
