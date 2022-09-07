@@ -2,7 +2,9 @@
 
 namespace app\AbstractFactory\product\Appt;
 
-abstract class ApptEncoder
+use app\AbstractFactory\Encoder;
+
+abstract class ApptEncoder implements Encoder
 {
     abstract public function encode() : string;
 }
