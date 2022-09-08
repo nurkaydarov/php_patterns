@@ -6,3 +6,5 @@ use app\singleton\Runner;
 //\app\factoryMethod\Runner::run();
 \app\AbstractFactory\Runner::run();
 
+\app\Prototype\Runner::main();
+

@@ -2,7 +2,9 @@
 
 namespace app\AbstractFactory\product\Contact;
 
-abstract class ContactEncoder
+use app\AbstractFactory\Encoder;
+
+abstract class ContactEncoder implements Encoder
 {
     abstract public function encode() : string;
 }

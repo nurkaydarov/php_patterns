@@ -2,7 +2,9 @@
 
 namespace app\AbstractFactory\product\Ttd;
 
-abstract class TtdEncoder
+use app\AbstractFactory\Encoder;
+
+abstract class TtdEncoder implements Encoder
 {
     abstract public function encode() : string;
 }
