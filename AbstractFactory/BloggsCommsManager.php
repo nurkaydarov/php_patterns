@@ -20,7 +20,7 @@ class BloggsCommsManager extends CommsManager
         return "BloggsCal верхний колонтитул";
     }
 
-/*    public function getApptEncoder(): ApptEncoder
+    public function getApptEncoder(): ApptEncoder
     {
         return new BloggsApptEncoder();
     }
@@ -33,14 +33,14 @@ class BloggsCommsManager extends CommsManager
     public function getContactEncoder(): ContactEncoder
     {
         return new BloggsContactEncoder();
-    }*/
+    }
 
     public function getFooterEncoder(): string
     {
         return "BloggsCal нижний колонтитул";
     }
 
-    public function make(int $flag_int): Encoder
+    /*public function make(int $flag_int): Encoder
     {
 
         switch ($flag_int){
@@ -57,5 +57,5 @@ class BloggsCommsManager extends CommsManager
         }
 
         return $this->instance;
-    }
+    }*/
 }

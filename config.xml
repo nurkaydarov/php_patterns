@@ -1,0 +1,10 @@
+<objects>
+    <class name="TerrainFactory">
+        <arg name = "0" instance="EarthSea"/>
+        <arg name = "0" instance="MarsPlains"/>
+        <arg name = "0" instance="EarthForest"/>
+    </class>
+    <class name = "AppointmentMaker">
+        <arg name = "0" instance="BloggsApptEncoder"/>
+    </class>
+</objects>

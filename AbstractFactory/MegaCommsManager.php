@@ -17,7 +17,7 @@ class MegaCommsManager extends CommsManager
         return "BloggsCal верхний колонтитул";
     }
 
-/*    public function getApptEncoder(): ApptEncoder
+    public function getApptEncoder(): ApptEncoder
     {
         return new MegaApptEncoder();
     }
@@ -30,10 +30,10 @@ class MegaCommsManager extends CommsManager
     public function getContactEncoder(): ContactEncoder
     {
         return new MegaContactEncoder();
-    }*/
+    }
 
 
-    public function make(int $flag_int): Encoder
+    /*public function make(int $flag_int): Encoder
     {
 
         switch ($flag_int){
@@ -50,7 +50,7 @@ class MegaCommsManager extends CommsManager
         }
 
         return $this->instance;
-    }
+    }*/
 
     public function getFooterEncoder(): string
     {
