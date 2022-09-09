@@ -9,4 +9,5 @@ use app\singleton\Runner;
 
 //\app\serviceLocator\Runner::main();
 
-\app\dependencyInjection\Runner::main();
+//\app\dependencyInjection\Runner::main();
+\app\composite\Runner::run();
