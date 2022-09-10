@@ -6,13 +6,16 @@ class Runner
 {
     public static function run()
     {
-        $archer1 = new Archer();
-        $laser1 = new LaserCannon();
+        $army01 = new Army();
+        $army01->addUnit(new Archer());
+        $army01->addUnit(new Archer());
 
-        $army = new Army();
-        $army->addUnit($archer1);
-        $army->addUnit($laser1);
-
-        echo $army->bombardStrength();
+        $army07 = new Army();
+        $army07->addUnit(new Army());
+        $army07->addUnit(new LaserCannon());
+        $composite = UnitScript::joinExisting($army01, $army07);
+        echo "<pre>";
+        var_dump($composite);
+        echo "</pre>";
     }
 }
