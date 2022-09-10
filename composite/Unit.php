@@ -4,7 +4,8 @@ namespace app\composite;
 
 abstract class Unit
 {
-    abstract public function addUnit(Unit $unit);
-    abstract public function removeUnit(Unit $unit);
+    public function getComposite(){
+        return null;
+    }
     abstract public function bombardStrength() : int;
 }
