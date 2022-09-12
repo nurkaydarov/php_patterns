@@ -11,4 +11,5 @@ use app\singleton\Runner;
 
 //\app\dependencyInjection\Runner::main();
 //\app\composite\Runner::run();
-\app\decorator\Runner::main();
+//\app\decorator\Runner::main();
+\app\Interpreter\Runner::main();
