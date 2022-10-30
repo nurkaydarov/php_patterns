@@ -49,4 +49,16 @@ class Registry
         return $this->conf;
     }
 
+    public function setCommands(Conf $commands)
+    {
+        $this->conf = $commands;
+    }
+
+    public function getCommands() : Conf
+    {
+        return $this->commands;
+    }
+
+
+
 }

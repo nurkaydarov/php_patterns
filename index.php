@@ -1,6 +1,5 @@
 <?php
 require_once './vendor/autoload.php';
-use app\singleton\Runner;
 
 //Runner::run();
 //\app\factoryMethod\Runner::run();
@@ -12,4 +11,7 @@ use app\singleton\Runner;
 //\app\dependencyInjection\Runner::main();
 //\app\composite\Runner::run();
 //\app\decorator\Runner::main();
-\app\Interpreter\Runner::main();
+//\app\Interpreter\Runner::main();
+
+//\app\observer\Login\Runner::main();
+\app\visitor\Runner::main();

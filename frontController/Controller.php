@@ -14,7 +14,8 @@ class Controller
     public static function run()
     {
         $instance = new Controller();
-
+        $instance->init();
+        $instance->handleRequest();
     }
 
     private function init()
